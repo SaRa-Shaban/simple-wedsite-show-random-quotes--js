@@ -43,16 +43,17 @@ function generateQuote() {
     ]
 
 
-    let x = Math.random() * 7;
-    let a = Math.floor(x);
-    console.log(x);
-    console.log(a)
-    console.log(quote[a])
-    console.log( auther[a])
+    let array = Math.random() * (quote.length) ;
+    let indexArray = Math.floor( array );
 
-    document.getElementById('quoteOutput').innerHTML = quote[a]
-    document.getElementById('autherOutput').innerHTML = auther[a];
+    document.getElementById('quoteOutput').innerHTML = quote[indexArray]
+    document.getElementById('autherOutput').innerHTML = auther[indexArray];
+    
 
+    // console.log(array);
+    // console.log(indexArray);
+    // console.log(quote[indexArray])
+    // console.log( auther[indexArray])
 
 
 
